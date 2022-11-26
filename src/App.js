@@ -12,7 +12,7 @@ export default function App() {
       <footer>
         <small>
           <a
-            href="https://github.com/TerlUA/My_weather_app"
+            href="https://github.com/TerlUA/weather-react"
             target="_blank"
             rel="noopener noreferrer"
           >
