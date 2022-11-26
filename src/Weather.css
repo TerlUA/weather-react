@@ -1,0 +1,13 @@
+.container {
+  opacity: 0.9;
+  max-width: 50%;
+  height: auto;
+  min-height: 600px;
+  min-width: 400px;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  position: relative;
+}
