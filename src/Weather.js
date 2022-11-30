@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
+import WeatherTemperature from "./WeatherTemperature";
 import axios from "axios";
 export default function Weather(props) {
   const [city, setCity] = useState("");
@@ -63,17 +64,17 @@ export default function Weather(props) {
           <FormattedDate date={weather.date} />
         </h2>
         <ul>
-          <li>Temperature: {Math.round(weather.temperature)}°C</li>
           <li>Description: {weather.description}</li>
           <li>Humidity: {weather.humidity}%</li>
           <li>Wind: {weather.wind}km/h</li>
         </ul>
 
-        <div className="float-left">
-          <div>
-            <WeatherIcon code={weather.icon} />
-          </div>
+        <div>
+          <WeatherIcon code={weather.icon} />
         </div>
+        <h3>
+          <WeatherTemperature celsius={weather.temperature} />
+        </h3>
       </div>
     );
   } else {
