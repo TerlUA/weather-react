@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import FormattedDate from "./FormattedDate";
 import WeatherIcon from "./WeatherIcon";
 import WeatherTemperature from "./WeatherTemperature";
+import WeatherForecast from "./WeatherForecast";
 import "./Weather.css";
 import axios from "axios";
 export default function Weather(props) {
@@ -76,6 +77,9 @@ export default function Weather(props) {
         <h3>
           <WeatherTemperature celsius={weather.temperature} />
         </h3>
+        <div>
+          <WeatherForecast coordinates={weather.coordinates} />
+        </div>
       </div>
     );
   } else {
