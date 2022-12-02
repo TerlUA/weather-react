@@ -19,3 +19,15 @@ li {
 .btn-primary {
   margin-top: 30px;
 }
+@media (max-width: 900px) {
+  .form-control {
+    font-size: 14px;
+    text-align: left;
+  }
+  .btn-primary {
+    font-size: 14px;
+    padding-left: 7px;
+    text-align: center;
+    padding-bottom: 5px;
+  }
+}
