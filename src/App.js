@@ -16,7 +16,7 @@ export default function App() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            Open-source code
+            Open-sourced code
           </a>
           , by Olena Terletska
         </small>
